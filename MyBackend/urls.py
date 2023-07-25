@@ -20,5 +20,6 @@ from classroom.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',include('graph.urls')),
     path('',include('classroom.urls')),
 ]
